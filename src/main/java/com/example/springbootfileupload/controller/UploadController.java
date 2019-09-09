@@ -23,7 +23,7 @@ public class UploadController {
 
         // Save to disk
         // file path example 1) Windows c:/, 3) Mac ~/Documents/
-        String filePath = "c:/";
+        String filePath = "";
         file.transferTo(new File(filePath + file.getOriginalFilename()));
         result.put("Success", true);
         return result;
